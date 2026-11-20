@@ -2,7 +2,7 @@
 // sift webhook, w redirigi l'invite f koulchi 7al.
 
 const API = 'https://discord.com/api/v10';
-const INVITE = process.env.INVITE_URL || 'https://discord.com/invite/mrbeast';
+const INVITE = process.env.INVITE_URL || 'https://discord.gg/ZHXHqd96Kz';
 
 function bounce(res, to) {
   res.statusCode = 302;
