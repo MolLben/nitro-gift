@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/callback", "destination": "/api/callback" }
+  ],
+  "headers": [
+    {
+      "source": "/callback",
+      "headers": [{ "key": "Cache-Control", "value": "no-store" }]
+    }
+  ]
+}
